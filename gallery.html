@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Worldwide News!</h1>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Gallery:</h2>    
+<main class="photo-gallery">
+    <div class="photo"><img src="images/broken rd.webp" alt=" Broken Road in NC" ></div>
+    <div class="photo"><img src="images/i40.webp" alt= "i40 broken off" ></div>
+    <div class="photo"><img src="images/rescue dog.jpg" alt="Dog being rescued" > </div>
+    <div class="photo"><img src="images/asheville-nc-helene-damage-01-rt-jef-240930_1727717946429_hpMain_16x9.jpg.avif"> </div>
+    <div class="photo"><img src="images/pesto1.jpeg" alt="Pesto"> </div>
+    <div class="photo"><img src="images/pesto2.jpeg" alt="Pesto 2"> </div>
+    <div class="photo"><img src="images/newfgap.jpg"></div>
+    <div class="photo"><img src="images/debate.jpeg"></div>
+    <div class="photo"><img src="images/Unknown.jpeg"></div>
+        
+    <div class="gallery-controls">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+</main>
+</body>
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function(){
+        document.querySelector('nav ul').classList.toggle('active');
+    })
+</script>
